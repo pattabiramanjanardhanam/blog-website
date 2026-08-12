@@ -7,22 +7,37 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Blog</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#help">Help</a></li>
-                <li><a href="#hello">Hello</a></li>
-            </ul>
-        </nav>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">
+                <a href="index.html"><h1>My Blog</h1></a>
+                <p class="tagline">Training project — learning web dev</p>
+            </div>
+            <button id="menu-toggle" aria-label="Toggle menu">☰</button>
+            <nav class="site-nav" id="site-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="posts/welcome.html">Posts</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
-        <section id="posts">
-            <h2>Blog Posts</h2>
-            <!-- Blog posts will be dynamically loaded here -->
+        <section class="hero container">
+            <h2>Learn by building</h2>
+            <p>Small, focused posts about web development, experiments, and notes.</p>
+        </section>
+
+        <section id="posts" class="container posts-grid">
+            <h2>Latest Posts</h2>
+            <article class="post-preview">
+                <h3><a href="posts/welcome.html">Welcome — First post</a></h3>
+                <p class="meta">Posted on 2026-08-12</p>
+                <p>A starter blog to learn HTML, CSS and JavaScript.</p>
+            </article>
+            <!-- Add more post-preview articles here -->
         </section>
     </main>
     <footer>
