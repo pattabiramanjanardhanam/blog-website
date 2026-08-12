@@ -5,6 +5,9 @@ on:
     branches:
       - pattabiramanjanardhanam-supreme-goggles
 
+permissions:
+  contents: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
